@@ -1,7 +1,8 @@
 <?php
 
 /* @var $this yii\web\View */
-
+use yii\helpers\Html;
+use yii\helpers\Url;
 $this->title = 'Создание сайтов от частного веб-мастера';
 ?>
 
@@ -18,12 +19,12 @@ $this->title = 'Создание сайтов от частного веб-ма�
                 <div class="navbar navbar-inverse navbar-static-top">
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="menuItem active"><a href="#navhome">Home</a></li>
-                            <li class="menuItem"><a href="#navprofile">Profile</a></li>
-                            <li class="menuItem"><a href="#navresume">Resume</a></li>
-                            <li class="menuItem"><a href="#navportfolio">Portfolio</a></li>
-                            <li class="menuItem"><a href="#navblog">Blog</a></li>
-                            <li class="menuItem"><a href="#navcontact">Contact</a></li>
+                            <li class="menuItem active"><a href="#navhome">Начало</a></li>
+                            <li class="menuItem"><a href="#navprofile">Обо мне</a></li>
+                            <li class="menuItem"><a href="#navresume">Резюме</a></li>
+                            <li class="menuItem"><a href="#navportfolio">Протфолио</a></li>
+                            <li class="menuItem"><a href="#navblog">Блог</a></li>
+                            <li class="menuItem"><a href="#navcontact">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,9 +56,9 @@ $this->title = 'Создание сайтов от частного веб-ма�
                             </div>
                             <div class="col-xs-12 col-sm-7 col-lg-7">
                                 <!-- Your Name -->
-                                <h1 class="title">Jonh Doe</h1>
+                                <h1 class="title">Создание и продвижение сайтов</h1>
                                 <!-- Your Profession -->
-                                <h3 class="sub-title">Web Designer & Mobile Application Developer</h3>
+                                <h3 class="sub-title">От Частного Web-мастера</h3>
                                 <!-- social icon -->
                                 <div class="social">
                                     <ul class="animated" data-animation="fadeIn" data-animation-delay="600">
@@ -117,7 +118,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                 <!--  <img src="/web/webmaster/assets/img/menu/profile_female.png" class="menu-img" data-img-name="profile_female" alt="Ukieweb" /> -->
                             </span>
                                     <!-- name menu block -->
-                                    <span class="name">Profile</span>
+                                    <span class="name">Обо мне</span>
                                 </a>
                                 <!-- end menu block (profile) -->
 
@@ -128,7 +129,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                 <img src="/web/webmaster/assets/img/menu/resume.png" class="menu-img" data-img-name="resume" alt="Ukieweb">
                             </span>
                                     <!-- name menu block -->
-                                    <span class="name">Resume</span>
+                                    <span class="name">Резюме</span>
                                 </a>
                                 <!-- end menu block (resume) -->
 
@@ -139,7 +140,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                 <img src="/web/webmaster/assets/img/menu/portfolio.png" class="menu-img" data-img-name="portfolio" alt="Ukieweb">
                             </span>
                                     <!-- name menu block -->
-                                    <span class="name">Portfolio</span>
+                                    <span class="name">Портолио</span>
                                 </a>
                                 <!-- end menu block (portfolio) -->
 
@@ -150,7 +151,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                 <img src="/web/webmaster/assets/img/menu/blog.png" class="menu-img" data-img-name="blog" alt="Ukieweb">
                             </span>
                                     <!-- name menu block -->
-                                    <span class="name">Blog</span>
+                                    <span class="name">Блог</span>
                                 </a>
                                 <!-- end menu block (portfolio) -->
 
@@ -161,7 +162,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                 <img src="/web/webmaster/assets/img/menu/contact.png" class="menu-img" data-img-name="contact" alt="Ukieweb">
                             </span>
                                     <!-- name menu block -->
-                                    <span class="name">Contact</span>
+                                    <span class="name">Контакты</span>
                                 </a>
                                 <!-- end menu block (contact) -->
                             </div>
@@ -187,9 +188,9 @@ $this->title = 'Создание сайтов от частного веб-ма�
                             </div>
                             <div class="col-xs-12 col-sm-7 col-lg-7">
                                 <!-- Title Page -->
-                                <h2 class="title">Profile</h2>
+                                <h2 class="title">Профиль</h2>
                                 <!-- Description Page -->
-                                <h4 class="sub-title">A Brief About Me</h4>
+                                <h4 class="sub-title">Немного обо мне</h4>
                             </div>
                         </div>
                         <!-- end row -->
@@ -205,13 +206,9 @@ $this->title = 'Создание сайтов от частного веб-ма�
                         <!-- start row -->
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-lg-7 padding-bottom">
-                                <h3 class="title">Hello, I am web designer</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p>
+                                <h3 class="title">Приветствую Вас на моём персональном сайте</h3>
+                                <p>Меня зовут Андрей и я частный веб-мастер. Я занимаюсь созданием сайтов под ключ, а также их продвижением и поддержкой. Я всегда настроено на долгосрочное взаимовыгодное сотрудничество, но и по небольшим работам с удовольствием Вам помогу)</p>
+                                <p>На первом месте для меня всегда заказчик. Я стараюсь построить работу исходя из Ваши личных потребностей. Всегда помогу советом и проконсультирую совершенно бесплатно.</p>
                                 <p>
                                     <a href="#" class="btn hover-animate">Hire me Now</a><a href="#" class="btn btn-color hover-animate">Download CV</a>
                                 </p>
@@ -220,31 +217,31 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                 <div class="block-grey">
                                     <table>
                                         <tr>
-                                            <td class="font-weight-m">Name</td>
-                                            <td class="text-right">John Doe</td>
+                                            <td class="font-weight-m">Имя</td>
+                                            <td class="text-right">Андрей</td>
                                         </tr>
                                         <tr>
-                                            <td class="font-weight-m">Date of birth</td>
-                                            <td class="text-right">November 24, 1990</td>
+                                            <td class="font-weight-m">Возраст</td>
+                                            <td class="text-right">29 лет</td>
                                         </tr>
                                         <tr>
                                             <td class="font-weight-m">E-mail</td>
-                                            <td class="text-right"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></td>
+                                            <td class="text-right"><a href="mailto:info@yourdomain.com">hello@az-site.ru</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="font-weight-m">Address</td>
-                                            <td class="text-right">144 King St, Melbourne VIC</td>
+                                            <td class="font-weight-m">Местоположение</td>
+                                            <td class="text-right">Россия, Санкт-Петербург</td>
                                         </tr>
                                         <tr>
-                                            <td class="font-weight-m">Phone</td>
-                                            <td class="text-right"><a href="tel:01234567890">012-3456-7890</a></td>
+                                            <td class="font-weight-m">Телефон</td>
+                                            <td class="text-right"><a href="tel:+78124082346">+7 (812) 408-23-46</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="font-weight-m">Website</td>
-                                            <td class="text-right"><a href="www.themeforest.net">www.themeforest.net</a></td>
+                                            <td class="font-weight-m">Сайт</td>
+                                            <td class="text-right"><a href="www.themeforest.net">az-site.ru</a></td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2" class="font-weight-m"><i class="fa fa-circle green-marker" aria-hidden="true"></i>Available for freelance</td>
+                                            <td colspan="2" class="font-weight-m"><i class="fa fa-circle green-marker" aria-hidden="true"></i>Сейчас онлайн</td>
                                         </tr>
                                         <!--
                                          <tr>
@@ -271,7 +268,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                         <!-- start row -->
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <h3 class="title">What i’m doing</h3>
+                                <h3 class="title">Какие задачи я выполняю</h3>
                             </div>
                         </div>
                         <!-- end row -->
@@ -280,15 +277,15 @@ $this->title = 'Создание сайтов от частного веб-ма�
                             <div class="col-xs-12 col-sm-12 col-lg-12">
                                 <div class="circle-block ">
                                     <span class="icon hover-animate"><i class="fa fa-android"></i></span>
-                                    <span class="name hover-animate">Applications</span>
+                                    <span class="name hover-animate">Сайты</span>
                                 </div>
                                 <div class="circle-block">
                                     <span class="icon hover-animate"><i class="fa fa-desktop"></i></span>
-                                    <span class="name hover-animate">Web design</span>
+                                    <span class="name hover-animate">Дизайн</span>
                                 </div>
                                 <div class="circle-block">
                                     <span class="icon hover-animate"><i class="fa fa-photo"></i></span>
-                                    <span class="name hover-animate">Illustrations</span>
+                                    <span class="name hover-animate">Маркетинг</span>
                                 </div>
                             </div>
                         </div>
@@ -305,7 +302,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                         <!-- start row -->
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <h3 class="title">Pricing</h3>
+                                <h3 class="title">Примерные цены на услуги</h3>
                             </div>
                         </div>
                         <!-- end row -->
@@ -313,15 +310,16 @@ $this->title = 'Создание сайтов от частного веб-ма�
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="table-pricing">
-                                    <div class="header-pricing">Applications</div>
+                                    <div class="header-pricing">Сайты</div>
                                     <div class="price-pricing">
-                                        $59<sup>99</sup>
+                                        от 5 000
+                                        <small>руб.</small>
                                     </div>
                                     <div class="properties-pricing">
                                         <ul>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                CSS Coding
+                                                PHP Coding
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
@@ -329,7 +327,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                PHP Coding
+                                                Yii2
                                             </li>
                                             <li class="del">
                                                 <span class="arrow-check"><i class="fa fa-times-circle"></i></span>
@@ -337,113 +335,114 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                             </li>
                                             <li class="del">
                                                 <span class="arrow-check"><i class="fa fa-times-circle"></i></span>
-                                                <del>Other Options</del>
+                                                <del>Другое</del>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="footer-pricing">
-                                        <a href="#" class="btn hover-animate">Order Now</a>
+                                        <a href="#" class="btn hover-animate">Заказать</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="table-pricing best-pricing">
-                                    <div class="header-pricing">Website design</div>
+                                    <div class="header-pricing">Дизайн</div>
                                     <div class="price-pricing">
-                                        $19<sup>99</sup>
-                                        <small>/h</small>
+                                        от 2 500
+                                        <small>руб.</small>
                                     </div>
                                     <div class="properties-pricing">
                                         <ul>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                CSS Coding
+                                                PSD макеты
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                JavaScript Coding
+                                                Дизайн сайта
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                PHP Coding<span class="new">new</span>
+                                                Логотипы<span class="new">new</span>
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                WordPress
+                                                Верстка для CMS
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                Other Options
+                                                Другое
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="footer-pricing">
-                                        <a href="#" class="btn btn-color hover-animate">Order Now</a>
+                                        <a href="#" class="btn btn-color hover-animate">Заказать</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="table-pricing">
-                                    <div class="header-pricing">Logo design</div>
+                                    <div class="header-pricing">Маркетинг</div>
                                     <div class="price-pricing">
-                                        $79<sup>99</sup>
+                                        от 500 руб
+                                        <small>/час</small>
                                     </div>
                                     <div class="properties-pricing">
                                         <ul>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                CSS Coding
+                                                Яндекс Директ
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                JavaScript Coding<span class="new">new</span>
+                                                Google Adwords<span class="new">new</span>
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                PHP Coding
+                                                SEO
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                WordPress
+                                                SMM
                                             </li>
                                             <li class="del">
                                                 <span class="arrow-check"><i class="fa fa-times-circle"></i></span>
-                                                <del>Other Options</del>
+                                                <del>И другое</del>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="footer-pricing">
-                                        <a href="#" class="btn hover-animate">Order Now</a>
+                                        <a href="#" class="btn hover-animate">Заказать</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="table-pricing">
-                                    <div class="header-pricing">Illustrations</div>
+                                    <div class="header-pricing">Консультации</div>
                                     <div class="price-pricing">
-                                        $129<sup>99</sup>
+                                        бесплатно :)
                                     </div>
                                     <div class="properties-pricing">
                                         <ul>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                CSS Coding
+                                                О сайтах
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                JavaScript Coding
+                                                По дизайну
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                PHP Coding
+                                                О продвижении
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                WordPress<span class="new">new</span>
+                                                О рекламе<span class="new">new</span>
                                             </li>
                                             <li>
                                                 <span class="arrow-check"><i class="fa fa-check-circle"></i></span>
-                                                Other Options
+                                                Любые другие :)
                                             </li>
                                         </ul>
                                     </div>
@@ -504,7 +503,7 @@ $this->title = 'Создание сайтов от частного веб-ма�
                         <!-- start row -->
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <h3 class="title">Calendar</h3>
+                                <h3 class="title">Календарь</h3>
                             </div>
                         </div>
                         <!-- end row -->
@@ -516,10 +515,10 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                         <div class="valign-middle">
                                             <div class="valign-inner">
                                                 <div class="date">
-                                                    <span class="day" id="day">01</span>
-                                                    <span class="month" id="month">Jan</span>
+                                                    <span class="day" id="day">08</span>
+                                                    <span class="month" id="month">Апр</span>
                                                 </div>
-                                                <div class="week-day" id="week-day">Friday</div>
+                                                <div class="week-day" id="week-day">Вторник</div>
                                             </div>
                                         </div>
                                     </div>
@@ -545,8 +544,8 @@ $this->title = 'Создание сайтов от частного веб-ма�
                                 </div>
 
                                 <ul class="notes">
-                                    <li><div class="calendar-note">Sorry. I'm not available on those days</div></li>
-                                    <li><div class="calendar-note today-note">Today</div></li>
+                                    <li><div class="calendar-note">Извините. Я не работаю сегодня</div></li>
+                                    <li><div class="calendar-note today-note">Сегодня</div></li>
                                 </ul>
 
                             </div>
